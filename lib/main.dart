@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'bottom_bar.dart';
+import 'package:ticket_booking/utils/app_styles.dart';
+import 'screens/bottom_bar.dart';
 
 void main() => runApp(const App());
 
@@ -10,7 +11,7 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: "Flutter Demo",
-      theme: ThemeData(primarySwatch: Colors.blue),
+      theme: ThemeData(primaryColor: primary),
       home: const BottomBar(),
     );
   }
