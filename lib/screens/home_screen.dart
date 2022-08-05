@@ -3,19 +3,13 @@ import 'package:flutter/material.dart';
 import 'package:ticket_booking/screens/hotel_screen.dart';
 import 'package:ticket_booking/screens/ticket_view.dart';
 import 'package:ticket_booking/utils/app_info_list.dart';
+import 'package:ticket_booking/utils/app_layout.dart';
 import 'package:ticket_booking/utils/app_styles.dart';
 import 'package:gap/gap.dart';
 import 'package:ticket_booking/widgets/double_text_widget.dart';
 
-class HomeScreen extends StatefulWidget {
+class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
-
-  @override
-  State<StatefulWidget> createState() => HomeScreenState();
-}
-
-class HomeScreenState extends State<HomeScreen> {
-  String title = 'Home';
 
   @override
   Widget build(BuildContext context) {
@@ -100,6 +94,7 @@ class HomeScreenState extends State<HomeScreen> {
                         ))
                     .toList(),
               )),
+          Gap(AppLayout.getHeight(25))
         ],
       ),
     );
